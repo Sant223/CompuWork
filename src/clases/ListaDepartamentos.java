@@ -15,4 +15,12 @@ public class ListaDepartamentos {
     public void eliminarDepartamento(Departamento departamento){
         listaDepartamentos.remove(departamento);
     }
+
+    public boolean estaVacia(ArrayList<Departamento> listaDepartamentos){
+        if(listaDepartamentos.size()== 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }

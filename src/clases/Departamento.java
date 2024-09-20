@@ -2,7 +2,6 @@ package clases;
 
 import java.util.ArrayList;
 
-import javax.swing.JOptionPane;
 
 public class Departamento {
     private String nombreDepartamento;
@@ -51,20 +50,6 @@ public class Departamento {
 
     public void eliminarEmpleado(Empleado empleado){
         listaEmpleados.remove(empleado);
-        /*int idEmpleado = 0;
-        try {
-            idEmpleado = Integer.parseInt(JOptionPane.showInputDialog(" - Digita el documento del empleado que quieres eliminar."));
-            
-            
-            for(Empleado i: listaEmpleados){
-                if(i.getId() == idEmpleado){
-                listaEmpleados.remove(i);
-                }
-            }    
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "SOLO SON PERMITDOS NUMEROS", "ERROR", JOptionPane.ERROR_MESSAGE);
-        }
-        */
     }
 
     public void mostrarEmpleados(){
