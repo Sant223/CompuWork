@@ -40,8 +40,8 @@ public class Opcion1 {
                 JOptionPane.showMessageDialog(null,"SOLO SON PERMITIDOS 0 Y EL 1", "AVISO", JOptionPane.INFORMATION_MESSAGE);
             }
             
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "SOLO SON PERMITDOS NUMEROS", "ERROR", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "ERROR", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
         return null;
     }
