@@ -1,6 +1,9 @@
 package clases;
 
+//Clase Empleado()
 public class Empleado {
+
+    //Atributos
     private String nombre;
     private String apellido;
     private int id;
@@ -8,6 +11,7 @@ public class Empleado {
     private Departamento departamento;
     private String desempeno;
 
+    //Constructor para un empleado sin departamento
     public Empleado(String nombre, String apellido, int id, int salario, int indicador){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -19,6 +23,8 @@ public class Empleado {
             this.desempeno = "Malo";
         }
     }
+
+    //constructor para un empleado con departamento
     public Empleado(String nombre, String apellido, int id, int salario, Departamento departamento,int indicador){
         this.nombre = nombre;
         this.apellido = apellido;
@@ -31,6 +37,8 @@ public class Empleado {
             this.desempeno = "Malo";
         }
     }
+
+    //getters and setters
     public int getId(){
         return id;
     }

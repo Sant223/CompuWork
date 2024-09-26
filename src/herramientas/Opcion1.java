@@ -4,12 +4,16 @@ import clases.Empleado;
 import clases.EmpleadoPermanente;
 import clases.EmpleadoTemporal;
 
+//Clase Opcion1
 public class Opcion1 {
+    //Constantes para bueno y malo, y para empleado temporal y permanente
     private static final byte BUENO = 0;
     private static final byte MALO = 1;
     private static final byte PERMANENTE = 0;
     private static final byte TEMPORAL = 1;
 
+    /*funcion crearEmpleado() que pedira al usuario el nombre, el id, 
+    etc para seguidamente crear una instancia de Empleado() y retornarla*/
     public static Empleado crearEmpleado(){
         String nombre, apellido, fechaIngreso, fechaSalida;
         int id, salario;

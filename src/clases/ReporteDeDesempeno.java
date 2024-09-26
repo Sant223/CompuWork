@@ -1,15 +1,19 @@
 package clases;
 import java.util.ArrayList;
 
+//Clase ReporteDeDesempeno() 
 public class ReporteDeDesempeno {
+    //atributos
     private int id;
     private String desempeno;
 
+    //constructor
     public ReporteDeDesempeno(){
         id = (int)(Math.random()*1000);
         desempeno = null;
     }
 
+    //metodo que mostrara el desempeño del empleado
     public void generarReporteEmpleado(ArrayList<Empleado>listaEmpleados, Empleado empleado){
         String nombre = "", apellido = "";
         int id = 0;
@@ -27,6 +31,7 @@ public class ReporteDeDesempeno {
         }
     }
 
+    //metodo que mostrara el desempeño del departamento
     public void generarReporteDepartamento(ArrayList<Departamento> listaDeparmentos, Departamento departamento){
         String nombre = "";
         int id = 0;

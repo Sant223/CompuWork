@@ -1,11 +1,14 @@
 package herramientas;
 import javax.swing.JOptionPane;
 
+//Clase Eleccion()
 public class Eleccion {
 
+    //Metodo constructor vacio
     public Eleccion(){
-
     }
+
+    //Funcion eleccion() que recibira la eleccion del usuario y retornara el numero de su eleccion
     public static byte eleccion(){
         byte eleccion = 0;
         try {
@@ -21,9 +24,6 @@ public class Eleccion {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "SOLO SON PERMITIDOS NUMEROS", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
-           
-        
-        
         return eleccion;
     }
 

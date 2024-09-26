@@ -2,17 +2,19 @@ package clases;
 
 import java.util.ArrayList;
 
-
+//Clase Departamento()
 public class Departamento {
+    //Atributos privados
     private String nombreDepartamento;
     private int idDepartamento;
     private ArrayList <Empleado> listaEmpleados;
     private String desempeno;
 
+    //Constructor vacio
     public Departamento(){
-    
     }
 
+    //Constructor
     public Departamento(String nombreDepartamento, int idDepartamento, int indicador){
         this.nombreDepartamento = nombreDepartamento;
         this.idDepartamento = idDepartamento;
@@ -24,6 +26,7 @@ public class Departamento {
         }
     }
 
+    //getters and setters
     public void setNombreDepartamento(String nombreDepartamento){
         this.nombreDepartamento = nombreDepartamento;
     }
@@ -44,17 +47,20 @@ public class Departamento {
         return desempeno;
     }
 
+    //metodo para agregar una instancia de Empleado() a la lista de empleados del departamento
     public void agregarEmpleado(Empleado empleado){
         listaEmpleados.add(empleado);
     }
 
+    //metodo para eliminar un empleado de la lista
     public void eliminarEmpleado(Empleado empleado){
         listaEmpleados.remove(empleado);
     }
 
+    //metodo que mostrara los empleados en la lista
     public void mostrarEmpleados(){
         int contador= 1;
-
+        
         for(Empleado i: listaEmpleados){
 
             System.out.println("Empleado numero: "+ contador

@@ -9,7 +9,7 @@ import herramientas.Opcion2;
 
 //clase Main
 public class Main {
-
+    //metodo main
     public static void main(String [] args){
         
         ListaDepartamentos listaDepartamento = new ListaDepartamentos();
