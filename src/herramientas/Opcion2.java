@@ -32,4 +32,21 @@ public class Opcion2 {
         }
         return null;
     }
+
+    // Método que acepta entradas directamente para facilitar las pruebas
+    public static Departamento crearDepartamento(String nombreDepartamento, String idDepartamentoStr, String indicadorStr) {
+        try {
+            int idDepartamento = Integer.parseInt(idDepartamentoStr);
+            byte indicador = Byte.parseByte(indicadorStr);
+
+            if (indicador != BUENO && indicador != MALO) {
+                return null; // Indicador fuera de rango esperado
+            }
+
+            Departamento departamento = new Departamento(nombreDepartamento, idDepartamento, indicador);
+            return departamento;
+        } catch (Exception e) {
+            return null;
+        }
+    }
 }

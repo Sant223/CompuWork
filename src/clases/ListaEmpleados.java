@@ -1,6 +1,9 @@
 package clases;
 import java.util.ArrayList;
 
+
+
+
 //clase ListaEmpleados()
 public class ListaEmpleados {
 
@@ -30,4 +33,9 @@ public class ListaEmpleados {
             return false;
         }
     }
+
+    public ArrayList<Empleado> getLista(){
+        return listaEmpleados;
+    }
+    
 }

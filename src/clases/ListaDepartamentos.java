@@ -30,4 +30,8 @@ public class ListaDepartamentos {
             return false;
         }
     }
+
+    public ArrayList<Departamento> getLista(){
+        return listaDepartamentos;
+    }
 }

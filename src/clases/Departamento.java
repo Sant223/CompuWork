@@ -47,6 +47,10 @@ public class Departamento {
         return desempeno;
     }
 
+    public ArrayList<Empleado> getLista(){
+        return listaEmpleados;
+    }
+
     //metodo para agregar una instancia de Empleado() a la lista de empleados del departamento
     public void agregarEmpleado(Empleado empleado){
         listaEmpleados.add(empleado);

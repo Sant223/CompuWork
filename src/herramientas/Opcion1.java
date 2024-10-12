@@ -36,8 +36,8 @@ public class Opcion1 {
                 Empleado empleado= new EmpleadoPermanente(nombre, apellido, id, salario, null, fechaIngreso, indicador);
                 return empleado;
             }else if(eleccion == 1){
-                fechaIngreso = JOptionPane.showInputDialog("Ingrese la fecha de ingreso: (Que cumpla con el formato yyyy/MM/dd )");
-                fechaSalida = JOptionPane.showInputDialog("Ingrese la fecha de salida: (Que cumpla con el formato yyyy/MM/dd )");
+                fechaIngreso = JOptionPane.showInputDialog("Ingrese la fecha de ingreso: (Que cumpla con el formato yyyy-MM-dd )");
+                fechaSalida = JOptionPane.showInputDialog("Ingrese la fecha de salida: (Que cumpla con el formato yyyy-MM-dd )");
                 Empleado empleado = new EmpleadoTemporal(nombre, apellido, id, salario, null, fechaIngreso, fechaSalida, indicador);
                 return empleado;
             }else{
